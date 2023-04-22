@@ -90,9 +90,9 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+        <div className={styles["sidebar-title"]}>ChatGPT</div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+         欢迎咨询：1182692107
         </div>
         <div className={styles["sidebar-logo"]}>
           <ChatGptIcon />
@@ -129,16 +129,7 @@ export function SideBar(props: { className?: string }) {
             </a>
           </div>
         </div>
-        <div>
-          <IconButton
-            icon={<AddIcon />}
-            text={shouldNarrow ? undefined : Locale.Home.NewChat}
-            onClick={() => {
-              chatStore.newSession();
-            }}
-            shadow
-          />
-        </div>
+       
       </div>
 
       <div
